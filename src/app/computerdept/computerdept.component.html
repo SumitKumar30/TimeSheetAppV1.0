@@ -1,0 +1,47 @@
+<div class="container">
+  <div class="col-sm-6 text-center"  *ngIf="facultyA">
+    <h2 class="text-center" >Faculity Summary</h2>
+    <canvas baseChart
+          [data]="pieChartData"
+          [labels]="pieChartLabels"
+          [chartType]="pieChartType"
+          [options]="pieChartOptions"         
+          (chartClick)="chartClicked($event)"></canvas>
+      </div>
+      <div class="col-sm-6" *ngIf="A">
+        <h2 class="text-center" >Details of A</h2>
+        <canvas baseChart
+        [data]="pieChartData"
+        [labels]="pieChartLabels"
+        [chartType]="pieChartType"
+        [options]="pieChartOptions"       
+        (chartClick)="aChartClicked($event)"></canvas>
+      </div>
+      <div class="col-sm-6" *ngIf="B">
+          <h2 class="text-center" >Details of B</h2>
+          <canvas baseChart
+          [data]="pieChartData"
+          [labels]="pieChartLabels"
+          [chartType]="pieChartType"
+          [options]="pieChartOptions"       
+          (chartClick)="bChartClicked($event)"></canvas>
+        </div>
+        <div class="col-sm-6" *ngIf="C">
+            <h2 class="text-center" >Details of C</h2>
+            <canvas baseChart
+            [data]="pieChartData"
+            [labels]="pieChartLabels"
+            [chartType]="pieChartType"
+            [options]="pieChartOptions"       
+            (chartClick)="cChartClicked($event)"></canvas>
+          </div>
+          <div class="col-sm-6" *ngIf="D">
+              <h2 class="text-center" >Details of D</h2>
+              <canvas baseChart
+              [data]="pieChartData"
+              [labels]="pieChartLabels"
+              [chartType]="pieChartType"
+              [options]="pieChartOptions"       
+              (chartClick)="dChartClicked($event)"></canvas>
+            </div>
+</div>

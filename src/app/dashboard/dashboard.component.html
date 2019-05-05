@@ -1,0 +1,48 @@
+<div class="container">
+  <div class="col-sm-6 text-center"  *ngIf="common">
+    <h2 class="text-center" >Department Summary</h2>
+    <canvas baseChart
+          [data]="pieChartData"
+          [labels]="pieChartLabels"
+          [chartType]="pieChartType"
+          [options]="pieChartOptions"         
+          (chartClick)="chartClicked($event)"></canvas>
+      </div>
+      <div class="col-sm-6" *ngIf="compPie">
+        <h2 class="text-center" >Details of Computer Science Department</h2>
+        <canvas baseChart
+        [data]="pieChartData"
+        [labels]="pieChartLabels"
+        [chartType]="pieChartType"
+        [options]="pieChartOptions"       
+        (chartClick)="compChartClicked($event)"></canvas>
+      </div>
+      <div class="col-sm-6" *ngIf="electroPie">
+          <h2 class="text-center" >Details of Electronics Department</h2>
+          <canvas baseChart
+          [data]="pieChartData"
+          [labels]="pieChartLabels"
+          [chartType]="pieChartType"
+          [options]="pieChartOptions"       
+          (chartClick)="chartClicked($event)"></canvas>
+        </div>
+        <div class="col-sm-6" *ngIf="mechPie">
+            <h2 class="text-center" >Details of Mechanical Department</h2>
+            <canvas baseChart
+            [data]="pieChartData"
+            [labels]="pieChartLabels"
+            [chartType]="pieChartType"
+            [options]="pieChartOptions"       
+            (chartClick)="chartClicked($event)"></canvas>
+          </div>
+          <div class="col-sm-6" *ngIf="civilPie">
+              <h2 class="text-center" >Details of Civil Department</h2>
+              <canvas baseChart
+              [data]="pieChartData"
+              [labels]="pieChartLabels"
+              [chartType]="pieChartType"
+              [options]="pieChartOptions"       
+              (chartClick)="chartClicked($event)"></canvas>
+            </div>
+</div>
+
